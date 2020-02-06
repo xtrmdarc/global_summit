@@ -205,7 +205,7 @@ a:hover {
   align-items: center;
   text-align: center;
   padding: 15px;
-  width: calc( 100% / 5 - 10px);
+  width: calc( 100% / 5 - 3px);
   background-color: #d3d3d323;
   transition-property: background-color, border;
   transition-duration: 0.4s;
@@ -722,7 +722,7 @@ footer img {
     display: none;
   }
 
-  main section:first-child {
+  .main_about {
     padding-top: 60px;
   }
 
@@ -752,4 +752,91 @@ footer img {
     background-position-y: -50px;
   }
 
+  .hero .wrapper {
+    padding-top: 60px;
+  }
+
+  .hero h2 {
+    font-size: 6vw;
+  }
+
+  .hero h1 {
+    background-size: cover;
+    background-position-y: 0;
+    font-size: 12vw;
+    line-height: 10vw;
+  }
+
+  .hero .description {
+    width: 100%;
+  }
+
+  .hero .location p {
+    margin-bottom: 20px;
+  }
+
+  .partners .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main_program .program-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .main_program .program_feature {
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .featured_speakers .speaker{
+    width: 100%;
+  }
+
+  .partners .logos img {
+    width: calc(100% / 3 - 10px);
+    height: 60px;
+  }
+
+  .featured_speakers .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .main_program .program_feature img {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+  }
+
+  .main_program .program_feature h4 {
+    width: 23%;
+    font-size: 4vw;
+  }
+
+  .main_program .program_feature p {
+    width: 40%;
+    font-size: 3vw;
+    line-height: 4vw;
+    flex-grow: 1;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  .featured_speakers .speaker-info h3 {
+    font-size: 5vw;
+  }
+
+  .featured_speakers .speaker-info span {
+    font-size: 3vw;
+    line-height: 3.9vw;
+  }
+
+  .featured_speakers .speaker-info p {
+    font-size: 3vw;
+    line-height: 3.9vw;
+  }
 }
