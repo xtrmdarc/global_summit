@@ -839,4 +839,13 @@ footer img {
     font-size: 3vw;
     line-height: 3.9vw;
   }
+
+  .hero .description p {
+    font-size: 3vw;
+    line-height: 4.4vw;    
+  }
+
+  .hero .location p {
+    font-size: 4vw;    
+  }
 }
