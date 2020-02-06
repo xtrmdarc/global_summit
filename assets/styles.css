@@ -292,7 +292,7 @@ a:hover {
 .partners .logos img {
   width: calc(100% / 5 - 10px);
   height: 100px;
-  filter: contrast(0.5);
+  filter: contrast(0);
   object-fit: cover;
 }
 
@@ -350,6 +350,7 @@ footer img {
   padding: 50px;
   background-color: white;
   box-shadow: 0px 0 1px 0.9px rgba(129, 129, 129, 0.384);
+  line-height: 24px;
 }
 
 .main_about .contact {
@@ -371,6 +372,32 @@ footer img {
 
 .black-footer img {
   filter: contrast(0) brightness(20);
+}
+
+.about_the_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about_the_logo p {
+  margin-top: 30px;
+  width: 80%;
+  line-height: 24px;
+}
+
+.about_the_logo .img-wrapper {
+  margin-top: 40px;
+  padding: 20px;
+  height: 250px;
+  width: auto;
+  border: 1px solid rgba(129, 129, 129, 0.299);
+}
+
+.about_the_logo .img-wrapper img {
+  height: 100%;
+  width: auto;
 }
 
 @media screen and (min-width: 768) {
