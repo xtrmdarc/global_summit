@@ -79,18 +79,27 @@ a:hover {
   padding-bottom: 15px;
 }
 
+.main-nav img {
+  object-fit: cover;
+  filter: contrast(0) brightness(0);
+}
+
 .main-nav ul li {
-  margin-left: 4vw;
+  margin-left: 3.6vw;
 }
 
 .main-nav .main-cta {
-  margin-left: 6vw;
-}
-
-.main-nav .main-cta button {
   border: 4px #ec5242 solid;
   padding: 10px;
   color: #ec5242;
+  margin-left: 4vw;
+}
+
+.right-part-nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .hero {
@@ -608,10 +617,14 @@ footer img {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 768) {
-
+@media screen and (min-width: 768px) {
+  
 }
 
-@media screen and (max-width: 767) {
-  
+@media screen and (max-width: 767px) {
+  .main-nav ul {
+    display: none;
+  }
+
+
 }
