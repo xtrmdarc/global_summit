@@ -17,6 +17,10 @@ body {
   color: #272a31;
 }
 
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 a,
 p,
 span,
@@ -480,6 +484,54 @@ footer img {
 
 .second-step {
   border-top: 1px solid rgba(129, 129, 129, 0.299);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-step .step-description {
+  margin-bottom: 20px;
+}
+
+.lunch-day {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  width: 100%; 
+  margin-top: 30px;
+  box-shadow: 0px 0 1px 0.9px rgba(129, 129, 129, 0.384);
+}
+
+.lunch-day .header {
+  background-color: #e7e7e7;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.lunch-day .options-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.lunch-day input[type="radio"] {
+  margin-left: 10px;
+}
+
+.main-button-cta {
+  margin-top: 40px;
+  background-color: #ec5242;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  transition-property: background-color,filter;
+  transition-duration: 0.8s;
+}
+
+.main-button-cta:hover {
+  background-color: #c24638;
 }
 
 @media screen and (min-width: 768) {
