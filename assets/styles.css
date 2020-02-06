@@ -369,6 +369,10 @@ footer img {
   background-color: #272a31;
 }
 
+.black-footer img {
+  filter: contrast(0) brightness(20);
+}
+
 @media screen and (min-width: 768) {
 
 }
