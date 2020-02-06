@@ -79,6 +79,13 @@ a:hover {
   padding-bottom: 15px;
 }
 
+.hamburguer-menu {
+  font-size: 28px;
+  margin-left: 15px;
+  color: black;
+  display: none;
+}
+
 .main-nav img {
   object-fit: cover;
   filter: contrast(0) brightness(0);
@@ -626,5 +633,8 @@ footer img {
     display: none;
   }
 
+  .hamburguer-menu {
+    display: inline-block;
+  }
 
 }
