@@ -440,6 +440,48 @@ footer img {
   width: calc(100% / 2 - 80px);
 }
 
+.first-step {
+  background-color: #d3d3d323; 
+}
+
+.step .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.first-step .breadcrumb {
+  position: absolute;
+  top: 20px;
+  right: 13%;
+}
+
+.first-step .breadcrumb li{
+  margin-left: 10px;
+}
+
+.step-description {
+  padding: 12px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  border: 1px solid rgba(129, 129, 129, 0.499);
+}
+.step-description .step-number {
+  color: red;
+  margin-right: 10px;
+}
+
+.step-description span {
+  display: inline-block;
+}
+
+.second-step {
+  border-top: 1px solid rgba(129, 129, 129, 0.299);
+}
+
 @media screen and (min-width: 768) {
 
 }
