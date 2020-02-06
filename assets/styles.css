@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+header {
+  z-index: 100;
+}
+
 a:hover {
   color: inherit;
   text-decoration: none;
@@ -77,6 +81,7 @@ a:hover {
   box-shadow: 2px 1px 2px rgba(129, 129, 129, 0.699);
   padding-top: 15px;
   padding-bottom: 15px;
+  background-color: white;
 }
 
 .hamburguer-menu {
@@ -476,7 +481,7 @@ footer img {
 .first-step .breadcrumb {
   position: absolute;
   top: 20px;
-  right: 13%;
+  right: 0;
 }
 
 .first-step .breadcrumb li{
@@ -504,6 +509,7 @@ footer img {
   flex-direction: column;
   align-items: center;
   position: relative;
+  text-align: center;
 }
 
 .second-step .step-description {
@@ -582,7 +588,7 @@ footer img {
   justify-content: center;
   align-content: center;
   height: 300px;
-  width: 65vw;
+  width: 80vw;
   border: 3px solid red;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -590,6 +596,7 @@ footer img {
   grid-gap: 1.2px;
   background-color:rgba(129, 129, 129, 0.150);
 }
+
 .select-tickets-table * {
   background-color: white;
   display: flex;
@@ -635,6 +642,51 @@ footer img {
 
   .hamburguer-menu {
     display: inline-block;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
+
+  .breadcrumb {
+    display: none;
+  }
+
+  .landing-margin {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .first-step .wrapper {
+    width: 100%;
+  }
+
+  .select-tickets-table {
+    width: 98%;
+    max-width: 100%;
+  }
+
+  .select-tickets-table h3 , .select-tickets-table h4, .select-tickets-table label,.select-tickets-table span  {
+    font-size: 11px;
+    padding: 2px;
+  }
+  
+  .second-step h2 {
+    margin-top: 20px;
+  }
+
+  footer .final-words {
+    display: none;
+  }
+
+  footer span {
+    font-size: 13px;
+    font-weight: 100;
+  }
+
+  footer img {
+    transform: scale(1);
   }
 
 }
