@@ -92,6 +92,10 @@ a:hover {
   display: none;
 }
 
+.hamburguer-menu:hover {
+  cursor: pointer;
+}
+
 .main-nav img {
   object-fit: cover;
   filter: contrast(0) brightness(0);
@@ -604,7 +608,7 @@ footer img {
   align-content: center;
   height: 300px;
   width: 80vw;
-  border: 3px solid red;
+  /* border: 3px solid red; */
   margin-top: 50px;
   margin-bottom: 30px;
   box-shadow: 0px 0 1px 0.9px rgba(129, 129, 129, 0.384);
@@ -652,9 +656,12 @@ footer img {
   background-size: cover;
 }
 
-
 .select-tickets-table input[type="radio"] {
   margin-top: 10px;
+}
+
+footer .final-words {
+  font-weight: 100;
 }
 
 @media screen and (min-width: 768px) {
