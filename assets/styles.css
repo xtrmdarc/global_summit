@@ -264,7 +264,12 @@ a:hover {
 
 .featured_speakers .speaker .img-wrapper {
   width: calc(100% / 3);
-  background: black;
+}
+
+.featured_speakers .speaker .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .featured_speakers .speaker-info {
@@ -281,6 +286,7 @@ a:hover {
 .featured_speakers .speaker-info span {
   color: #ec5242;
   font-style: italic;
+  line-height: 17px;
 }
 
 .featured_speakers .speaker-info hr {
@@ -319,7 +325,7 @@ a:hover {
   width: calc(100% / 5 - 10px);
   height: 100px;
   filter: contrast(0);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .img-fluid {
@@ -703,6 +709,7 @@ footer img {
   footer span {
     font-size: 13px;
     font-weight: 100;
+    text-align: center;
   }
 
   footer img {
@@ -815,6 +822,7 @@ footer img {
   .main_program .program_feature h4 {
     width: 23%;
     font-size: 4vw;
+    margin: 0 10px;
   }
 
   .main_program .program_feature p {
