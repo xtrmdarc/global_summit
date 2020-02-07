@@ -1,11 +1,3 @@
-
-/* 
-  colors: 
-  dark : #272a31;
-  accent : #ec5242
-  muted : #d3d3d3
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -330,6 +322,7 @@ a:hover {
   height: 100px;
   filter: contrast(0);
   object-fit: contain;
+  padding: 10px;
 }
 
 .img-fluid {
@@ -667,6 +660,12 @@ footer .final-words {
 .main_program .program_feature span {
   display: inline-block;
   margin-bottom: 10px;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.main_program .program_feature span:hover {
+  color: #ec5242;
 }
 
 @media screen and (max-width: 767px) {
