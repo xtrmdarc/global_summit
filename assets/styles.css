@@ -709,11 +709,16 @@ footer img {
   footer span {
     font-size: 13px;
     font-weight: 100;
-    text-align: center;
+  }
+
+  footer .info-wrapper {
+    margin: 0;
+    padding: 0;
+    width: calc(100% / 5 * 3);
   }
 
   footer img {
-    transform: scale(1);
+    width: calc(100% / 5 * 2);
   }
 
   .main_about h1 {
