@@ -664,8 +664,9 @@ footer .final-words {
   font-weight: 100;
 }
 
-@media screen and (min-width: 768px) {
-  
+.main_program .program_feature span {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -825,10 +826,9 @@ footer .final-words {
     flex-wrap: wrap;
   }
 
-  .main_program .program_feature img {
-    width: 60px;
-    height: 60px;
-    background-color: white;
+  .main_program .program_feature span {
+    display: inline-block;
+    margin: 0;
   }
 
   .main_program .program_feature h4 {
