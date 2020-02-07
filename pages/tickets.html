@@ -63,36 +63,36 @@
             <h4>Normal</h4>
             <label  >
               $10,000
-              <input id="price-1day" type="radio" name="price">
+              <input id="price-1day" type="radio" name="price" onclick="firstDayLunch()">
             </label>
             <label   >
               $10,000
-              <input type="radio" name="price">
+              <input type="radio" name="price" onclick="firstDayLunch()">
             </label>
             <label  >
               $17,000
-              <input type="radio" name="price">
+              <input type="radio" name="price" onclick="secondDayLunch()">
             </label>
             <label  >
               $0
-              <input type="radio" name="price">
+              <input type="radio" name="price" onclick="secondDayLunch()">
             </label>
             <h4>Students</h4>
             <label  >
               $7,000
-              <input type="radio" name="price">
+              <input type="radio" name="price" onclick="firstDayLunch()">
             </label>
             <label   >
               $7,000
-              <input type="radio" name="price">
+              <input type="radio" name="price" onclick="firstDayLunch()">
             </label>
             <label  >
               $12,000
-              <input type="radio" name="price">
+              <input type="radio" name="price" onclick="secondDayLunch()">
             </label>
             <label  >
               $0
-              <input type="radio" name="price">
+              <input type="radio" name="price" onclick="secondDayLunch()">
             </label>
           </div>
         </div>
@@ -116,7 +116,7 @@
         <span class="step-number">STEP 2</span>
         <span> Please select your lunch for registered day. There will be no further costs for the lunch.</span>
       </div>
-      <div class="lunch-day">
+      <div id="day-1" class="lunch-day">
         <div class="header">
           <p>Day 1</p> 
         </div>
@@ -140,7 +140,7 @@
         </div>
        
       </div>
-      <div class="lunch-day">
+      <div id="day-2" class="lunch-day" style="display: none;">
         <div class="header">
           <p>Day 2</p> 
         </div>
@@ -179,5 +179,22 @@
         </p>
       </div>
   </footer>
+  <script>
+    function firstDayLunch() {
+      var firstLunch  = document.getElementById('day-1');
+      var secondLunch = document.getElementById('day-2');
+
+      firstLunch.style.display = 'flex';
+      secondLunch.style.display = 'none';
+      console.log('1');
+    }
+    function secondDayLunch() {
+      var firstLunch  = document.getElementById('day-1');
+      var secondLunch = document.getElementById('day-2');
+
+      firstLunch.style.display = 'flex';
+      secondLunch.style.display = 'flex';
+    }
+  </script>
 </body>
 </html>
