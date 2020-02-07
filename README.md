@@ -32,7 +32,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/xtrmdarc/global_summit/261ef172c77cd6fb156b6a28177e158747c707f9/pages/main.html)
+[Live Demo Link](https://rawcdn.githack.com/xtrmdarc/global_summit/f1e3f3419d357c89dff9a4633ca296d249f1edbb/pages/main.html)
 
 ### Prerequisites
 To make this repository working in your local machine you need only a browser.
