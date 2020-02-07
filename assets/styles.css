@@ -116,6 +116,7 @@ a:hover {
   flex-direction: column;
   background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQoQmMr7Nh0tD-oyCBCQK3u6GHN-MmT-zo71XiLS31nTv1r9qTb') 100% 100% no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .hero .overlay {
@@ -355,6 +356,25 @@ footer img {
 
 .main_about {
   background-color: #d3d3d323;
+}
+
+.decoration {
+  filter: contrast(1);
+  position: absolute;
+  width: 10%;
+}
+
+#decor-1 {
+  top: 50%;
+  right: 10%;
+}
+
+#coin {
+  width: 5%;
+  top: 5%;
+  left: calc(50% - 5% / 2);
+  transition-property: all ease ;
+  transition-duration: 0.7s;
 }
 
 .main_about h1 {

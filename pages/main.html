@@ -39,6 +39,9 @@
   </header>
   <main>
     <section class="hero">
+      <img id="decor-1" class="decoration" src="https://cdn.pixabay.com/photo/2017/09/27/00/09/frame-2790568_960_720.png" alt="decoration 1">
+      <img id="coin" class="decoration" src="https://cdn1.iconfinder.com/data/icons/cash-coin-essentials-colored/48/JD-09-512.png" alt="decoration 2">
+    
       <div class="overlay wrapper">
         <div class="wrapper landing-margin">
           <button class="hamburguer-menu">&#9776;</button>
@@ -254,5 +257,23 @@
         </p>
       </div>
   </footer>
+
+<script type="text/javascript">
+  document.onmousemove = function(e) {
+    
+    var container = document.getElementsByClassName('hero')[0];
+    var containerRect = container.getBoundingClientRect();
+    if (e.pageY >= container.offsetTop && e.pageY <= container.offsetTop + containerRect.height ){
+      
+      var coinElement = document.getElementById('coin');
+      var coinRect = coinElement.getBoundingClientRect();
+      var newPositionY = e.pageY - container.offsetTop- coinElement.height/2;
+      var newPositionX = e.pageX - container.offsetLeft - coinElement.width/2
+      coinElement.style.top = newPositionY+'px';
+      coinElement.style.left = newPositionX+'px';
+    }
+  
+  }
+</script>
 </body>
 </html>
