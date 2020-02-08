@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CSource+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+  <title>Tickets | Global Summit of Digital Marketing</title>
+</head>
+<body>
+   <header>
+    <nav class="top-nav landing-margin">
+      <ul class="inline-nav">
+        <li><a href="#" class="fab fa-facebook-f"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">My Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+    <nav class="main-nav landing-margin">
+      <a href="main.html"> <img src="https://images.youracclaim.com/images/1ff09e52-d200-47f1-8055-082c586c3c16/Facebook%2BBlueprint%2BLogo_stacked.png" alt="logo" height="50" width="80"></a>
+      <div class="right-part-nav">
+        <ul class="inline-nav">
+          <li><a href="about_us.html">About</a> </li>
+          <li><a href="main.html">Program</a></li>
+          <li><a href="tickets.html">Join</a></li>
+          <li><a href="main.html#sponsors">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <button class="main-cta" >CC Campaign</button>
+        <button class="hamburguer-menu">&#9776;</button>
+      </div>
+    
+    </nav>
+  </header>
+  <main>
+  <form action="#" method="POST">
+
+   
+    <section class="first-step step landing-margin">
+      <div class="overlay wrapper">
+        <button class="hamburguer-menu">&#9776;</button>  
+        <div class="wrapper p-top-bot-section">
+          <h2 >Select Tickets</h2>
+          <hr class="header_line">
+          <div class="step-description">
+            <span class="step-number">STEP 1</span>
+            <span> Please select the day you want to join DA International Summit</span>
+          </div>
+          <div class="select-tickets-table">
+            <h3>Ticket</h3>
+            <h3 style="grid-column: span 2;">1-Day-Ticket</h3>
+            <h3 >2-Day-Ticket</h3>
+            <h3>DA Affiliate</h3>
+            <h4>Date</h4>
+            <span>24, mar(Fri)</span>
+            <span>25, mar(Sat)</span>
+            <span>24-25, mar(Fri-Sat)</span>
+            <span>24-25, mar(Fri-Sat)</span>
+            <h4>Normal</h4>
+            <label  >
+              $10,000
+              <input id="price-1day" type="radio" name="price" onclick="firstDayLunch()">
+            </label>
+            <label   >
+              $10,000
+              <input type="radio" name="price" onclick="firstDayLunch()">
+            </label>
+            <label  >
+              $17,000
+              <input type="radio" name="price" onclick="secondDayLunch()">
+            </label>
+            <label  >
+              $0
+              <input type="radio" name="price" onclick="secondDayLunch()">
+            </label>
+            <h4>Students</h4>
+            <label  >
+              $7,000
+              <input type="radio" name="price" onclick="firstDayLunch()">
+            </label>
+            <label   >
+              $7,000
+              <input type="radio" name="price" onclick="firstDayLunch()">
+            </label>
+            <label  >
+              $12,000
+              <input type="radio" name="price" onclick="secondDayLunch()">
+            </label>
+            <label  >
+              $0
+              <input type="radio" name="price" onclick="secondDayLunch()">
+            </label>
+          </div>
+        </div>
+        <div class="breadcrumb">
+          <ul class="inline-nav">
+            <li><a href="#">Home</a> </li>
+            <li> &#8827; </li>
+            <li><a href="#">Tickets</a></li>
+            <li> &#8827; </li>
+            <li><a href="#">Schedule</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="second-step step landing-margin p-top-bot-section">
+      <span class="next-step-arrow"> <span>&or;</span></span>
+      <h2>Select Your Lunch</h2>
+      <hr class="header_line">
+      <div class="step-description">
+        <span class="step-number">STEP 2</span>
+        <span> Please select your lunch for registered day. There will be no further costs for the lunch.</span>
+      </div>
+      <div id="day-1" class="lunch-day">
+        <div class="header">
+          <p>Day 1</p> 
+        </div>
+        <div class="options-wrapper landing-margin">
+          <label for="menu-1">
+            Menu 1
+            <input id="menu-1" name="menu-day1" type="radio">
+          </label>
+          <label for="menu-2">
+            Menu 2
+            <input id="menu-2" name="menu-day1" type="radio">
+          </label>
+          <label for="menu-3">
+            Menu 3
+            <input id="menu-3" name="menu-day1" type="radio">
+          </label>
+          <label for="menu-4">
+            Menu 4
+            <input id="menu-4" name="menu-day1" type="radio">
+          </label>
+        </div>
+       
+      </div>
+      <div id="day-2" class="lunch-day" style="display: none;">
+        <div class="header">
+          <p>Day 2</p> 
+        </div>
+        <div class="options-wrapper landing-margin">
+          <label for="menu-day2-1">
+            Menu 1
+            <input id="menu-day2-1" name="menu-day2" type="radio">
+          </label>
+          <label for="menu-day2-2">
+            Menu 2
+            <input id="menu-day2-2" name="menu-day2" type="radio">
+          </label>
+          <label for="menu-day2-3">
+            Menu 3
+            <input id="menu-day2-3" name="menu-day2" type="radio">
+          </label>
+          <label for="menu-day2-4">
+            Menu 4
+            <input id="menu-day2-4" name="menu-day2" type="radio">
+          </label>
+        </div>
+      </div>
+      <input type="submit" class="main-button-cta" value="Request Tickets">
+    </section>
+  </form>
+  </main>
+
+  <footer class="landing-margin black-footer">
+      <img src="https://images.youracclaim.com/images/1ff09e52-d200-47f1-8055-082c586c3c16/Facebook%2BBlueprint%2BLogo_stacked.png" alt="facebook ads badge">
+      <div class="info-wrapper">
+        <span>
+          &copy; 2020 International Digital Marketing Summit, Lima.
+        </span>
+        <p class="final-words">
+          All rights reserved. https://www.fbads2020.com.
+        </p>
+      </div>
+  </footer>
+  <script>
+    function firstDayLunch() {
+      var firstLunch  = document.getElementById('day-1');
+      var secondLunch = document.getElementById('day-2');
+
+      firstLunch.style.display = 'flex';
+      secondLunch.style.display = 'none';
+      console.log('1');
+    }
+    function secondDayLunch() {
+      var firstLunch  = document.getElementById('day-1');
+      var secondLunch = document.getElementById('day-2');
+
+      firstLunch.style.display = 'flex';
+      secondLunch.style.display = 'flex';
+    }
+  </script>
+</body>
+</html>
