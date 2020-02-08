@@ -2,6 +2,9 @@
 
 > This is the website of the Facebook Ads Digital Advertising Summit 2020. This project consists of one Landing Page, an About Us Page, and Tickets Shop Page. I developed all of them on my own using pure HTML and CSS with no frameworks. The site is responsive to laptop and mobile resolutions. I added an small bit of JS to make an animation more vivid in the landing page.
 
+# Project Presentation Video
+[![Video Screeshot](assets/project_presentation_video.png)](https://www.loom.com/share/2963a81315fd44e18bc2d9e4b73e6b8e)
+
 ## Landing Page
 # Latop View
 ![screenshot](assets/latop_view.png)
